@@ -17,7 +17,7 @@ class Ayuda(commands.Cog):
         embedvar.add_field(name='*info', value='Para ver el status del bot', inline=False)
         embedvar.add_field(name='*ayuda', value='Para ver esta ayuda', inline=False)
 
-        await ctx.reply(embed=embedvar, mention_author=False)
+        await ctx.reply(embed=embedvar)
 
 def setup(BOT):
     BOT.add_cog(Ayuda(BOT))

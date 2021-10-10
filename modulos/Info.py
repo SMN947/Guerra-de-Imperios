@@ -12,7 +12,7 @@ class Info(commands.Cog):
     async def on_ready(self):
         print('✔ Modulo Info')
 
-    @commands.command(aliases=['info', 'botinfo', 'bi', 'status'])
+    @commands.command(aliases=['info', 'botinfo', 'bi'])
     async def bot(self, ctx):
         values = psutil.virtual_memory()
         val2 = values.available * 0.001
@@ -40,7 +40,7 @@ class Info(commands.Cog):
                           f'\nTotal ram- {round(values24, 2)} GB'
                           f'\nAvailable Ram - {round(val4, 2)} GB')
 
-        await ctx.reply(embed=embedve, mention_author=False)
+        await ctx.reply(embed=embedve)
 
 def setup(BOT):
     BOT.add_cog(Info(BOT))
