@@ -26,7 +26,8 @@ Rename the file ***config.template.json*** to ***config.json*** and update its c
 ```json
 {
   "bot_prefix": "*",
-  "token": "45gsdfgtwMzksdfsdcsdfFNjY2.EfvsfrR.5SDFvsdrVereRre5HDeg_cOsU"
+  "token": "45gsdfgtwMzksdfsdcsdfFNjY2.EfvsfrR.5SDFvsdrVereRre5HDeg_cOsU",
+  "uri": "your mongo db uri"
 }
 ```
 
